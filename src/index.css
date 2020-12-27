@@ -1,3 +1,75 @@
 body {
   background-color: whitesmoke;
 }
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  text-align: left;
+ }
+ /* Clear floats after the columns */
+ section:after {
+  content: "";
+  display: table;
+  clear: both;
+ }       
+ @media (max-width: 600px) {
+  nav, article{
+  width: 100%;
+  height: auto;
+  }
+ }
+ nav {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  text-align: left;
+ }
+
+ .tail {
+  width: 10%;
+  background: lightgray;
+  text-align: center;
+  border-radius: 40%;
+ }
+ .btt{
+  background: rgba(255, 228, 78, 0.863);
+  text-align: center;
+  border-radius: 50px;
+  width: 30px;
+ }
+ .result{
+  background: rgba(255, 228, 78, 0.863);
+  text-align: center;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 5px 0px;
+ }
+ .button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid rgba(255, 228, 78, 0.863);
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  margin: 5px;
+  padding: 8px 10px;
+} 
+
+.button1:hover {
+  background-color: rgba(255, 228, 78, 0.863);
+  color: white;
+}
+
+input[type=text] {
+  border-radius: 4px;
+  background-color: lightgrey;
+  color: black;
+  padding: 8px 10px;
+}
+select {
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 228, 78, 0.863);
+  margin: 5px;
+  padding: 8px 10px;
+}
